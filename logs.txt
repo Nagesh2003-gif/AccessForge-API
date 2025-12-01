@@ -1,0 +1,12 @@
+[INFO] 2025-11-30 → Backend server started on port 5000
+[INFO] 2025-11-30 → Connected to MongoDB successfully
+[POST] 2025-11-30 → /api/register - New user registered: user1@example.com
+[POST] 2025-11-30 → /api/login - Login attempt by: user1@example.com
+[AUTH] 2025-11-30 → JWT verified successfully for user: user1@example.com
+[GET] 2025-11-30 → /api/tasks - Tasks list fetched
+[POST] 2025-11-30 → /api/tasks - New task created by: user1@example.com
+[PUT] 2025-11-30 → /api/tasks/6710c1ab - Task updated
+[DELETE] 2025-11-30 → /api/tasks/6710c1ab - Task deleted
+[ADMIN] 2025-11-30 → /api/admin/users accessed by: admin@example.com
+[WARNING] 2025-11-30 → Invalid JWT token attempt detected
+[ERROR] 2025-11-30 → MongoDB timeout: retrying...
