@@ -79,10 +79,10 @@ npm start
 
 | Method | Route             | Description                               | Auth |
 | ------ | ----------------- | ----------------------------------------- | ---- |
-| POST   | `/api/v1/signup`  | Register new user                         | ❌    |
-| POST   | `/api/v1/login`   | Login & get JWT token                     | ❌    |
-| GET    | `/api/v1/admin`   | Verify admin role & access (role-based)   | 🔐   |
-| GET    | `/api/v1/student` | Verify student role & access (role-based) | 🔐   |
+| POST   | `http://localhost:4000/api/v1/signup`  | Register new user                         | ❌    |
+| POST   | `http://localhost:4000/api/v1/login`   | Login & get JWT token                     | ❌    |
+| GET    | `http://localhost:4000/api/v1/admin`   | Verify admin role & access (role-based)   | 🔐   |
+| GET    | `http://localhost:4000/api/v1/student` | Verify student role & access (role-based) | 🔐   |
 
 <br/>
 
