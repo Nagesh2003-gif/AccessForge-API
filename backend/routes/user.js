@@ -31,4 +31,29 @@ router.get("/admin", auth, isAdmin, (req, res) => {
     })
 });
 
+
+// Student-only route
+router.get("/student-features", auth, isStudent, (req, res) => {
+  res.json({
+    success: true,
+    features: [
+      "View Courses",
+      "Take Tests",
+      "View Results"
+    ]
+  });
+});
+
+// Admin-only route
+router.get("/admin-features", auth, isAdmin, (req, res) => {
+  res.json({
+    success: true,
+    features: [
+      "Manage Users",
+      "Create Courses",
+      "View Reports"
+    ]
+  });
+});
+
 module.exports = router;
