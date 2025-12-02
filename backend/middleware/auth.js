@@ -8,7 +8,7 @@ exports.auth = (req, res, next) => {
       req.cookies.token ||
       req.header("Authorization")?.replace("Bearer ", "");
 
-    console.log("Token received:", token);
+    console.log("mere Token received:", token);
 
     if (!token) {
       return res.status(401).json({
@@ -37,7 +37,8 @@ exports.auth = (req, res, next) => {
 
 exports.isStudent = (req, res, next) => {
     try {
-        if (req.user.role !== "Student") {
+      
+        if (req.user.role!== "student") {
             return res.status(401).json({
                 success: false,
                 message: "This is a protect route for students you can not access it"
@@ -55,7 +56,7 @@ exports.isStudent = (req, res, next) => {
 
 exports.isAdmin = (req, res, next) => {
     try {
-        if (req.user.role !== "Admin") {
+        if (req.user.role.toLowerCase() !== "admin") {
             return res.status(401).json({
                 success: false,
                 message: "This is a protect route for Admins,you can not access it"
